@@ -5,7 +5,7 @@
 
 An autonomous agentic system that handles cross-dialect SQL migration (Snowflake to BigQuery) and performs real-time data lineage validation. Designed for enterprise data warehouse modernization projects.
 
-**[▶ See the full pipeline in motion — docs/story.html](docs/story.html)**
+**[▶ See the full pipeline in motion](https://jthiruveedula.github.io/LLM-SQL-Agent/)** (or open [docs/index.html](docs/index.html) locally)
 
 ## 🚀 Key Capabilities
 - **Autonomous SQL Migration**: Converts Snowflake SQL to BigQuery syntax using GPT-5.5 + SQLGlot.
