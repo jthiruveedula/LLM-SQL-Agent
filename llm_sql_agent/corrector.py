@@ -1,6 +1,6 @@
 """LLM-driven semantic correction for queries SQLGlot can't transpile outright.
 
-Calls OpenAI's GPT-4o when ``OPENAI_API_KEY`` is set. Without a key (e.g. in
+Calls OpenAI's GPT-5.5 when ``OPENAI_API_KEY`` is set. Without a key (e.g. in
 CI or local dry runs) it falls back to a small table of known Snowflake ->
 BigQuery idioms so the pipeline stays runnable end to end without network
 access or billing.
@@ -44,7 +44,7 @@ def correct_query(sql: str, error: str, source_dialect: str, target_dialect: str
 
     client = OpenAI(api_key=api_key)
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-5.5",
         messages=[
             {
                 "role": "system",

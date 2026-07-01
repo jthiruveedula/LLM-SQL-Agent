@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>LLM SQL Agent — Pipeline Story</title>
-<meta name="description" content="Cinematic walkthrough of the LLM SQL Agent migration pipeline: SQLGlot parsing, GPT-4o correction, lineage capture, and validation." />
+<meta name="description" content="Cinematic walkthrough of the LLM SQL Agent migration pipeline: SQLGlot parsing, GPT-5.5 correction, lineage capture, and validation." />
 <style>
   :root{
     --color-primary:#1E293B;
@@ -163,7 +163,7 @@
   </p>
   <div class="badges">
     <span class="badge">SQLGlot transpilation</span>
-    <span class="badge">GPT-4o semantic correction</span>
+    <span class="badge">GPT-5.5 semantic correction</span>
     <span class="badge">Async batch migration</span>
     <span class="badge">Lineage-verified</span>
   </div>
@@ -191,7 +191,7 @@
 <section id="stage-2" data-stage-label="Heal">
   <div class="stage">
     <div class="stage-index">STAGE 02</div>
-    <h2>GPT-4o heals what syntax alone can't.</h2>
+    <h2>GPT-5.5 heals what syntax alone can't.</h2>
     <p class="desc">
       Snowflake idioms with no direct BigQuery equivalent — <code>IFF</code>,
       <code>DATEADD</code>, <code>LISTAGG</code> — get rewritten by an
@@ -199,7 +199,7 @@
     </p>
     <div class="flow-grid">
       <div class="flow-card"><span class="step-no">1</span><h3>Detect</h3><p>Transpile error surfaces the unsupported construct and its position.</p></div>
-      <div class="flow-card"><span class="step-no">2</span><h3>Correct</h3><p>GPT-4o rewrites just the offending fragment, preserving semantics.</p></div>
+      <div class="flow-card"><span class="step-no">2</span><h3>Correct</h3><p>GPT-5.5 rewrites just the offending fragment, preserving semantics.</p></div>
       <div class="flow-card"><span class="step-no">3</span><h3>Re-parse</h3><p>Corrected SQL runs back through SQLGlot for validation.</p></div>
       <div class="flow-card"><span class="step-no">4</span><h3>Converge</h3><p>Loop exits the moment the query parses clean — or after 3 tries.</p></div>
     </div>
@@ -217,7 +217,7 @@
     <div class="pipeline" id="pipeline">
       <div class="pipe-node">Snowflake SQL</div><div class="pipe-arrow">&rarr;</div>
       <div class="pipe-node">SQLGlot Parse</div><div class="pipe-arrow">&rarr;</div>
-      <div class="pipe-node">GPT-4o Correct</div><div class="pipe-arrow">&rarr;</div>
+      <div class="pipe-node">GPT-5.5 Correct</div><div class="pipe-arrow">&rarr;</div>
       <div class="pipe-node">BigQuery Dry Run</div><div class="pipe-arrow">&rarr;</div>
       <div class="pipe-node">Lineage Capture</div>
     </div>
@@ -271,7 +271,7 @@
   </div>
 </section>
 
-<footer>LLM SQL Agent &middot; MIT License &middot; SQLGlot + GPT-4o + BigQuery</footer>
+<footer>LLM SQL Agent &middot; MIT License &middot; SQLGlot + GPT-5.5 + BigQuery</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
